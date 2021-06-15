@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+<html>
+
+<head>
+</head>
+
+<body>
+  <ul id="list">
+    <li>Id: <%=data.id %>
+    </li>
+    <li>Name: <%= data.name %>
+    </li>
+    <li>Language:<%= data.language %>
+    </li>
+    <li>
+      <ul>Geners: <% data.genres.forEach(function(gener){ %>
+          <%= gener %> ,
+            <% }) %>
+      </ul>
+    </li>
+    <li>
+      <% if(( 'image' in data)){ %>
+        <p>picture movie:</p>
+        <img src="<%= data.image.medium %>">
+        <% } %>
+    </li>
+  </ul>
+  <a href="/searchmovie/Searchres">back</a> <br />
+  <a href="/menu">back to menu</a>
+</body>
+
+</html>

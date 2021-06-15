@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+<html>
+
+<head>
+</head>
+
+<body>
+  <h1>Create new movie Page</h1>
+  <form action="/createmovie/addtask" method="POST">
+    Name : <input type="text" name="Name" value="<%= name%>"><br />
+    Language : <input id="lenguageC" type="text" name="Language" value="<%= language%>"> <br />
+    geners :<br />
+    <input id="generC" type="text" name="newtask">
+
+    <button type="submit" name="action" value="Send"> add gener </button>
+    <ul>
+      <% if (Geners !='' ){ %>
+        <% Geners.forEach(function(gener){ %>
+          <p>
+            <%= gener %>
+          </p>
+          <% })} %>
+    </ul>
+
+    <button type="submit" name="action" value="Sendmovie"> add movie </button>
+  </form>
+  <p>
+    <%= msg %>
+  </p>
+
+</body>
+
+</html>

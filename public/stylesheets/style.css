@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  background-color:blanchedalmond;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+#username {
+  padding-left: 2px;
+  margin-left: 15px;
+  margin-right: 27px;
+}
+
+#lenguageC{
+  margin-right: 40px;
+}
+
+#listuser{
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+#generC{
+  margin-left: 130px;
+}
+
+#username {
+  padding-left: 2px;
+  margin-left: 15px;
+  margin-right: 27px;
+}
+
+input {
+  padding: 5px;
+  margin: 15px;
+}
+
+#list{
+  width: 300px;
+  padding-left: 450px;
+}
+
+table{
+margin-left: 420px;
+}
+
+select{
+height: 32px;
+width: 172px;
+}
+
+#language {
+  margin-right: 20px;
+}
+
+
+
+a {
+  color: black;
+  font-size: medium;
+  padding-left: 2px;
+  margin-left: 15px;
+  margin-right: 27px;
+}

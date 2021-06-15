@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+<html>
+
+<head>
+</head>
+
+<body>
+  <form action="/editUsers/updateAdd" method="POST">
+    User Name : <input type="text" name="username" value="<%=obj.username %>"><br />
+    Password : <input type="text" name="password" value="<%=obj.password %>"> <br />
+    position: <input type="text" name="position" value="<%=obj.position %>"> <br />
+    create date : <input type="text" name="createdate" value="<%=obj.createdate %>"> <br />
+    Transactions number : <input type="text" name="numTransactions" value="<%=obj.numTransactions %>"> <br />
+
+    <button type="submit" value="Send">
+      <%=button%>
+    </button>
+  </form>
+</body>
+
+</html>

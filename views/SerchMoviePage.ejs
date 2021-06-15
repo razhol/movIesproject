@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+<html>
+
+<head>
+</head>
+
+<body>
+  <h1>Serch movie page</h1>
+  <form action="/searchmovie/Searchres" method="POST">
+    Movie Name: <input type="text" name="moviename"><br />
+
+    <div> chose gener: <select id="gener" name="gener">
+        <% Geners.forEach(function(gener){ %>
+          <option>
+            <%= gener %>
+          </option>
+          <% }) %>
+
+      </select>
+    </div>
+    <br />
+
+
+    <div> chose language: <select id="language" name="Language">
+        <% Languages.forEach(function(Language){ %>
+          <option>
+            <%= Language %>
+          </option>
+          <% }) %>
+      </select>
+    </div>
+    <br /><br /><br />
+    <button type="submit" name="action">Search movie</button>
+  </form>
+  <p>
+    <%= msg2 %>
+  </p>
+</body>
+
+</html>

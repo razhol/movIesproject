@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+<html>
+
+<head>
+</head>
+
+<body>
+  <h1>result page</h1>
+  <table border="1">
+    <tr>
+      <th>movie </th>
+      <th> gener </th>
+    </tr>
+
+    <% let i=0 %>
+      <% let j=0 %>
+
+        <% while(result.length> i || moviesgener.length > j){ %>
+          <tr>
+            <td>
+              <% if (i < result.length){ %>
+                <a href="/movieData/<%= result[i].name %>">
+                  <%= result[i].name %>
+                </a>
+                <% i ++ %>
+                  <% } %>
+            </td>
+            <% if (j < moviesgener.length){ %>
+              <td> <a href="/movieData/<%= moviesgener[j] %>">
+                  <%= moviesgener[j] %>
+                </a> </td>
+              <% j ++ %>
+                <% } %>
+          </tr>
+          <% } %>
+
+
+
+
+
+  </table>
+  <br />
+  <br />
+  <br />
+
+  <a href="/menu">back to menu</a>
+
+
+
+</body>
+
+</html>

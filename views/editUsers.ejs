@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+<html>
+
+<head>
+</head>
+
+<body>
+  <h1>users page</h1>
+  <ul>
+    <% names.forEach(function(name){ %>
+      <li id="listuser">
+        <%= name %> <a href="/editUsers/delete/<%= name %>">delete</a> <a
+            href="/editUsers/update/<%= name %>">update</a>
+      </li>
+      <% }) %>
+  </ul>
+  <br />
+  <br />
+  <a href="/editUsers/userAddandUpdate">add new</a>
+  <br />
+  <a href="/menu">back to menu</a>
+</body>
+
+</html>
